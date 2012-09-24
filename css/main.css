@@ -1,0 +1,26 @@
+
+html, body { margin: 0; padding: 0;}
+
+#wrapper {
+  background: #000;
+  height: 100%; 
+  width: 100%;
+}
+#wow-monster { 
+  background: center center url(images/monster-still.gif);
+  height: 350px;
+  margin: 0 auto;
+  width: 300px;
+}
+.like-wrapper {
+  margin: 0 auto;
+  padding: 100px 50px;
+  width: 600px;
+}
+.like-inner {
+  color: white;
+  margin: 0 auto;
+  height: 20px;
+  text-align: center;
+  width: 100px;
+}
