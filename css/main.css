@@ -28,8 +28,9 @@ body {
   margin: 0 auto;
   height: 20px;
   text-align: center;
-  width: 300px;
+  width: 200px;
 }
 .like-share {
   display: none;
 }
+.fb_like, .tweet-this { float: left; }
