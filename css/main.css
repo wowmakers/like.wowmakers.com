@@ -2,12 +2,12 @@
 html, body { margin: 0; padding: 0;}
 
 #wrapper {
-  background: #000;
+  background: #101010;
   height: 100%; 
   width: 100%;
 }
 #wow-monster { 
-  background: center center url(images/monster-still.gif);
+  background: center center url(../images/monster-still.gif);
   height: 350px;
   margin: 0 auto;
   width: 300px;
