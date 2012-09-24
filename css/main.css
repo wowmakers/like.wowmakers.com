@@ -1,26 +1,33 @@
 
 html, body { margin: 0; padding: 0;}
 
-#wrapper {
-  background: #101010;
-  height: 100%; 
+body {
+  background: #101010 top center url(../images/bg.png) no-repeat;
+  min-height: 800px;
+  padding: 175px 0 0 0;
   width: 100%;
 }
+#wrapper {
+  margin: 0 auto;
+  width: 1200px;
+}
 #wow-monster { 
-  background: center center url(../images/monster-still.gif);
+  background: center -60px url(../images/monster-still.gif);
   height: 350px;
   margin: 0 auto;
-  width: 300px;
+  width: 200px;
 }
 .like-wrapper {
+  border: 1px solid blue;
   margin: 0 auto;
-  padding: 100px 50px;
-  width: 600px;
+  padding: 50px 0 200px 0;
+  width: 100%;
 }
 .like-inner {
+  border: 1px solid blue;
   color: white;
   margin: 0 auto;
   height: 20px;
   text-align: center;
-  width: 100px;
+  width: 80px;
 }

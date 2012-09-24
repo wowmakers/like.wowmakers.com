@@ -1,20 +1,37 @@
 
+function preload(arrayOfImages) {
+    $(arrayOfImages).each(function(){
+        $('<img/>')[0].src = this;
+    });
+}
+
 $(document).ready(function() {
+
+  preload([
+    'images/monster-still.gif',
+    'images/monster-foot-tapping.gif',
+    'images/monster-dancing.gif'
+  ]);
   
-  var bgSound = new buzz.sound("audio/test.mp3", { preload: true, autoplay: false, loop:true });
+  var beforeMusic = new buzz.sound("audio/gangnam-intro.ogg", { preload: true, autoplay: false, loop:true });
+  var afterMusic  = new buzz.sound("audio/gangnam.ogg",  { preload: true, autoplay: false, loop:true });
 
   $(".like-wrapper").mouseenter(function(){
-    $("#wow-monster").css("background", "center center url(images/monster-foot-tapping.gif)");
+    beforeMusic.play().loop();
+    $("#wow-monster").css("background", "center -60px url(images/monster-foot-tapping.gif)");
   }).mouseleave(function(){
-    $("#wow-monster").css("background", "center center url(images/monster-still.gif)");
+    beforeMusic.pause();
+    $("#wow-monster").css("background", "center -60px url(images/monster-still.gif)");
   });
   
   $(".like-inner").mouseenter(function(){
-    bgSound.play().loop();
-    $("#wow-monster").css("background", "center center url(images/monster-dancing.gif)");
+    beforeMusic.pause();
+    afterMusic.play().loop();
+    $("#wow-monster").css("background", "center -60px url(images/monster-dancing.gif)");
   }).mouseleave(function(){
-    bgSound.pause();
-    $("#wow-monster").css("background", "center center url(images/monster-foot-tapping.gif)");
+    afterMusic.pause();
+    beforeMusic.play();
+    $("#wow-monster").css("background", "center -60px url(images/monster-foot-tapping.gif)");
   });
 
 });
