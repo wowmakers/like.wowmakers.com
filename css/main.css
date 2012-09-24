@@ -28,7 +28,7 @@ body {
   margin: 0 auto;
   height: 20px;
   text-align: center;
-  width: 200px;
+  width: 250px;
 }
 .fb-like, .tweet-this { float: left; }
-.tweet-this { margin-top: 5px; }
+.tweet-this { padding-left: 10px; }
