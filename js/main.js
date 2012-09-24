@@ -12,7 +12,7 @@ $(document).ready(function() {
     'images/monster-dancing.gif'
   ]);
 
-  $(".like-wrapper").mouseenter(startFootTapping).mouseleave(stopFootTapping);
+  $("#wrapper").mouseenter(startFootTapping).mouseleave(stopFootTapping);
   FB.Event.subscribe('edge.create', startDancing);
 });
 
