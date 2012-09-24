@@ -30,5 +30,5 @@ body {
   text-align: center;
   width: 200px;
 }
-.fb_like, .tweet-this { float: left; }
+.fb-like, .tweet-this { float: left; }
 .tweet-this { margin-top: 5px; }
