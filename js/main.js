@@ -13,11 +13,7 @@ $(document).ready(function() {
   ]);
 
   $(".like-wrapper").mouseenter(startFootTapping).mouseleave(stopFootTapping);
-  $(".like-inner").on("click", startDancing);
-
-  FB.Event.subscribe('edge.create', function(response) {
-    alert('test');
-  });
+  FB.Event.subscribe('edge.create', startDancing);
 });
 
 isLiked = false;
