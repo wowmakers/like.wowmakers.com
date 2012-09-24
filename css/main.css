@@ -1,8 +1,9 @@
 
-html, body { margin: 0; padding: 0;}
+html { margin: 0; padding: 0;}
 
 body {
   background: #101010 top center url(../images/bg.png) no-repeat;
+  margin: 0;
   min-height: 800px;
   padding: 175px 0 0 0;
   width: 100%;
@@ -18,13 +19,11 @@ body {
   width: 200px;
 }
 .like-wrapper {
-  border: 1px solid blue;
   margin: 0 auto;
-  padding: 50px 0 200px 0;
+  padding: 45px 0 200px 0;
   width: 100%;
 }
 .like-inner {
-  border: 1px solid blue;
   color: white;
   margin: 0 auto;
   height: 20px;
