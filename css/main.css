@@ -27,9 +27,18 @@ body {
   color: white;
   margin: 0 auto;
   height: 20px;
-  padding-left: 80px;
+  padding-left: 10px;
   text-align: center;
   width: 270px;
+
 }
-.fb-like, .tweet-this { float: left; }
+.button-click a {
+  display: block;
+  height: 34px;
+  width: 177px;
+  text-indent: -9999pt;
+  margin: -9px 0px -9px -22px;
+}
+.button-click { float: left; }
+.fb-like, .tweet-this { float: right; }
 .tweet-this { padding-left: 5px; }

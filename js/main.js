@@ -13,7 +13,7 @@ $(document).ready(function() {
   ]);
 
   $("#wow-monster,.like-wrapper").mouseenter(startFootTapping).mouseleave(stopFootTapping);
-  FB.Event.subscribe('edge.create', startDancing);
+  $(".button-click a").click(startDancing);
 });
 
 isLiked = false;
